@@ -1,3 +1,9 @@
+## [1.1.0-dev.1](https://github.com/Ikuradachi/Kagebili/compare/v1.0.0...v1.1.0-dev.1) (2026-11-05)
+
+### ✨ New Features
+
+* more ui debloat option ([ddd8ee0](https://github.com/Ikuradachi/Kagebili/commit/ddd8ee05537e946bb1319fad73fb133aaaee1a22))
+
 ## 1.0.0 (2026-11-05)
 
 ### ✨ New Features

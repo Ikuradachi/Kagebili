@@ -19,9 +19,9 @@ Click the button below, or manually add this repo URL to Morphe Manager: https:/
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0](https://github.com/Ikuradachi/Kagebili/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;15 patches total
+> **[v1.1.0-dev.1](https://github.com/Ikuradachi/Kagebili/releases/tag/v1.1.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;20 patches total
 <details open>
-<summary>📦 Bstation&nbsp;&nbsp;•&nbsp;&nbsp;15 patches</summary>
+<summary>📦 Bstation&nbsp;&nbsp;•&nbsp;&nbsp;20 patches</summary>
 <br>
 
 **Package name:** `com.bstar.intl`
@@ -41,13 +41,18 @@ Click the button below, or manually add this repo URL to Morphe Manager: https:/
 | [Disable player overlay ads](#disable-player-overlay-ads) | Disables video player in-stream bottom-right overlay ad banners. |  |
 | [Disable player recommendation widget](#disable-player-recommendation-widget) | Disables fullscreen video player bottom-right recommendation widget. |  |
 | [Disable player watermark](#disable-player-watermark) | Hides the top-right brand logo and copyright/premium watermark in the video player. |  |
+| [Disable rating prompts](#disable-rating-prompts) | Disables unsolicited app rating dialogs. |  |
 | [Disable splash ads](#disable-splash-ads) | Disables cold-start splash advertisement loading and countdown timer. |  |
 | [Disable tracking](#disable-tracking) | Disables internal Bilibili telemetry, APM profiling, TradPlus ad mediation, Firebase analytics, Crashlytics, and Facebook AppEvents. |  |
+| [Disable under-player ads](#disable-under-player-ads) | Disables direct and SDK advertisements below the player while preserving access prompts. |  |
 | [GmsCore support](#gmscore-support) | Uses Morphe GmsCore for Google sign-in and sign-out. |  |
 | [Hide bottom navigation items](#hide-bottom-navigation-items) | Hide selected bottom navigation bar tabs (Discover, Create, Chats, Me, Shorts). | • Hide Discover tab<br>• Hide Create button (+)<br>• Hide Chats tab<br>• Hide Me tab<br>• Hide Shorts tab |
+| [Hide feed ads](#hide-feed-ads) | Hides feed advertisement cards and optionally interest and rating questions. | • Hide question cards |
 | [Hide home search bar](#hide-home-search-bar) | Hides the search bar on the Home screen. | • Hide home search bar |
-| [Hide home tab bar items](#hide-home-tab-bar-items) | Hide selected horizontal tab bar items on the home screen (Featured, Plaza, Subscriptions, Anime, Shorts, Community, Campaigns). | • Hide Featured tab<br>• Hide Plaza tab<br>• Hide Campaign and Activity tabs<br>• Hide Subscriptions tab<br>• Hide Anime tab<br>• Hide Shorts tab<br>• Hide Community (Opus) tab |
+| [Hide home tab bar items](#hide-home-tab-bar-items) | Hides selected home tabs. With one remaining page, opens it directly with native search and no tab row. | • Hide Featured tab<br>• Hide Plaza tab<br>• Hide Campaign and Activity tabs<br>• Hide Subscriptions tab<br>• Hide Anime tab<br>• Hide Shorts tab<br>• Hide Community (Opus) tab |
+| [Hide user interactions](#hide-user-interactions) | Hides player comments and danmaku, disables danmaku sending, and preserves subtitle settings. |  |
 | [Pure discover search bar](#pure-discover-search-bar) | Removes discover tabs and trending searches to make the Discover page a pure search bar. | • Hide discover tabs<br>• Hide trending searches |
+| [Remove user content](#remove-user-content) | Filters known user videos and creator surfaces, keeps Anime search, and preserves unknown official content and download management. |  |
 
 </details>
 

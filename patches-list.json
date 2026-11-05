@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.0.0",
+  "version": "1.1.0-dev.1",
   "patches": [
     {
       "name": "Clean Me page",
@@ -300,6 +300,35 @@
       "options": []
     },
     {
+      "name": "Disable rating prompts",
+      "description": "Disables unsolicited app rating dialogs.",
+      "default": false,
+      "category": "Ads",
+      "compatiblePackages": [
+        {
+          "packageName": "com.bstar.intl",
+          "name": "Bstation",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00A1D6",
+          "signatures": [
+            "ca819a80c96372b8900b1a05a88888f94f9aa4b2da9e483b344dcabd254d40b4"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "3.83.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Disable splash ads",
       "description": "Disables cold-start splash advertisement loading and countdown timer.",
       "default": true,
@@ -333,6 +362,35 @@
       "description": "Disables internal Bilibili telemetry, APM profiling, TradPlus ad mediation, Firebase analytics, Crashlytics, and Facebook AppEvents.",
       "default": true,
       "category": "Privacy",
+      "compatiblePackages": [
+        {
+          "packageName": "com.bstar.intl",
+          "name": "Bstation",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00A1D6",
+          "signatures": [
+            "ca819a80c96372b8900b1a05a88888f94f9aa4b2da9e483b344dcabd254d40b4"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "3.83.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Disable under-player ads",
+      "description": "Disables direct and SDK advertisements below the player while preserving access prompts.",
+      "default": false,
+      "category": "Ads",
       "compatiblePackages": [
         {
           "packageName": "com.bstar.intl",
@@ -462,6 +520,45 @@
       ]
     },
     {
+      "name": "Hide feed ads",
+      "description": "Hides feed advertisement cards and optionally interest and rating questions.",
+      "default": false,
+      "category": "Ads",
+      "compatiblePackages": [
+        {
+          "packageName": "com.bstar.intl",
+          "name": "Bstation",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00A1D6",
+          "signatures": [
+            "ca819a80c96372b8900b1a05a88888f94f9aa4b2da9e483b344dcabd254d40b4"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "3.83.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": [
+        {
+          "key": "hideQuestionCards",
+          "title": "Hide question cards",
+          "description": "Also hides feed interest and rating questionnaires.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        }
+      ]
+    },
+    {
       "name": "Hide home search bar",
       "description": "Hides the search bar on the Home screen.",
       "default": true,
@@ -502,7 +599,7 @@
     },
     {
       "name": "Hide home tab bar items",
-      "description": "Hide selected horizontal tab bar items on the home screen (Featured, Plaza, Subscriptions, Anime, Shorts, Community, Campaigns).",
+      "description": "Hides selected home tabs. With one remaining page, opens it directly with native search and no tab row.",
       "default": true,
       "category": "Layout",
       "compatiblePackages": [
@@ -594,6 +691,35 @@
       ]
     },
     {
+      "name": "Hide user interactions",
+      "description": "Hides player comments and danmaku, disables danmaku sending, and preserves subtitle settings.",
+      "default": false,
+      "category": "Layout",
+      "compatiblePackages": [
+        {
+          "packageName": "com.bstar.intl",
+          "name": "Bstation",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00A1D6",
+          "signatures": [
+            "ca819a80c96372b8900b1a05a88888f94f9aa4b2da9e483b344dcabd254d40b4"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "3.83.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Pure discover search bar",
       "description": "Removes discover tabs and trending searches to make the Discover page a pure search bar.",
       "default": true,
@@ -640,6 +766,35 @@
           "values": null
         }
       ]
+    },
+    {
+      "name": "Remove user content",
+      "description": "Filters known user videos and creator surfaces, keeps Anime search, and preserves unknown official content and download management.",
+      "default": false,
+      "category": "Layout",
+      "compatiblePackages": [
+        {
+          "packageName": "com.bstar.intl",
+          "name": "Bstation",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#00A1D6",
+          "signatures": [
+            "ca819a80c96372b8900b1a05a88888f94f9aa4b2da9e483b344dcabd254d40b4"
+          ],
+          "formFactor": "MOBILE",
+          "targets": [
+            {
+              "version": "3.83.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
     }
   ]
 }
