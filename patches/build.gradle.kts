@@ -1,14 +1,14 @@
-group = "app.template"
+group = "io.github.ikuradachi.kagebili"
 
 patches {
     // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "Kagebili"
+        description = "Patches for the BiliBili/Bstation Android app, for use with Morphe."
+        source = "git@github.com:Ikuradachi/Kagebili.git"
+        author = "Ikuradachi"
+        contact = "https://github.com/Ikuradachi/Kagebili/issues"
+        website = "https://github.com/Ikuradachi/Kagebili"
         license = "GPLv3"
     }
 }
