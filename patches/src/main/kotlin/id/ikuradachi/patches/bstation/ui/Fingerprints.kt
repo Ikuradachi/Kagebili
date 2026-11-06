@@ -138,6 +138,18 @@ object DiscoverInitTabsFingerprint : Fingerprint(
     ),
 )
 
+internal object DiscoverViewCreatedFingerprint : Fingerprint(
+    classFingerprint = HomeDiscoverFragmentFingerprint,
+    name = "onViewCreated",
+    accessFlags = listOf(AccessFlags.PUBLIC),
+    returnType = "V",
+    parameters = listOf("Landroid/view/View;", "Landroid/os/Bundle;"),
+    filters = listOf(
+        methodCall(definingClass = "Landroidx/recyclerview/widget/RecyclerView;", name = "setAdapter"),
+        methodCall(definingClass = "Landroid/widget/ImageView;", name = "setOnClickListener"),
+    ),
+)
+
 object DiscoverTrendingSearchFingerprint : Fingerprint(
     classFingerprint = HomeDiscoverFragmentFingerprint,
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
