@@ -19,9 +19,9 @@ Click the button below, or manually add this repo URL to Morphe Manager: https:/
 ## 🩹 Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0](https://github.com/Ikuradachi/Kagebili/releases/tag/v1.0.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;15 patches total
+> **[v1.1.0-dev.2](https://github.com/Ikuradachi/Kagebili/releases/tag/v1.1.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
 <details open>
-<summary>📦 Bstation&nbsp;&nbsp;•&nbsp;&nbsp;15 patches</summary>
+<summary>📦 Bstation&nbsp;&nbsp;•&nbsp;&nbsp;6 patches</summary>
 <br>
 
 **Package name:** `com.bstar.intl`
@@ -33,21 +33,12 @@ Click the button below, or manually add this repo URL to Morphe Manager: https:/
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
-| [Clean Me page](#clean-me-page) | Hide creator center section and selected menus (campaign, FAQs, feedback) on the Me profile page. | • Hide Creator Center<br>• Hide Campaign menu<br>• Hide FAQs menu<br>• Hide Feedback menu |
-| [Debloat search landing page](#debloat-search-landing-page) | Debloats the search landing page by hiding trending searches, discovery modules, and promotional search bar hints. | • Hide trending searches<br>• Hide discovery modules<br>• Clean search bar hint |
-| [Disable floating ads](#disable-floating-ads) | Disables bottom-right promotional floating advertisement overlay. |  |
-| [Disable inner push banner](#disable-inner-push-banner) | Disables top slide-down promotional toast and inner-push banner notifications. |  |
-| [Disable player outro unlock card](#disable-player-outro-unlock-card) | Disables video player outro unlock video guide bottom-right card. |  |
-| [Disable player overlay ads](#disable-player-overlay-ads) | Disables video player in-stream bottom-right overlay ad banners. |  |
-| [Disable player recommendation widget](#disable-player-recommendation-widget) | Disables fullscreen video player bottom-right recommendation widget. |  |
-| [Disable player watermark](#disable-player-watermark) | Hides the top-right brand logo and copyright/premium watermark in the video player. |  |
-| [Disable splash ads](#disable-splash-ads) | Disables cold-start splash advertisement loading and countdown timer. |  |
+| [Clean interface](#clean-interface) | Customizes Home, navigation, account and search surfaces, and optional rating prompts. | • Hide home search bar<br>• Hide Featured tab<br>• Hide Plaza tab<br>• Hide Campaign and Activity tabs<br>• Hide Subscriptions tab<br>• Hide Anime tab<br>• Hide Home Shorts tab<br>• Hide Community (Opus) tab<br>• Simplify single-page Home<br>• Hide Discover tab<br>• Hide Create button (+)<br>• Hide Chats tab<br>• Hide Me tab<br>• Hide bottom Shorts tab<br>• Hide Creator Center<br>• Hide Campaign menu<br>• Hide FAQs menu<br>• Hide Feedback menu<br>• Hide search trending searches<br>• Hide discovery modules<br>• Clean search bar hint<br>• Hide discover tabs<br>• Hide Discover trending searches<br>• Disable rating prompts |
+| [Clean player](#clean-player) | Hides selected player branding, recommendations, outro cards and optional comments and danmaku. | • Disable player watermark<br>• Disable player recommendation widget<br>• Disable player outro unlock card<br>• Hide user interactions |
 | [Disable tracking](#disable-tracking) | Disables internal Bilibili telemetry, APM profiling, TradPlus ad mediation, Firebase analytics, Crashlytics, and Facebook AppEvents. |  |
 | [GmsCore support](#gmscore-support) | Uses Morphe GmsCore for Google sign-in and sign-out. |  |
-| [Hide bottom navigation items](#hide-bottom-navigation-items) | Hide selected bottom navigation bar tabs (Discover, Create, Chats, Me, Shorts). | • Hide Discover tab<br>• Hide Create button (+)<br>• Hide Chats tab<br>• Hide Me tab<br>• Hide Shorts tab |
-| [Hide home search bar](#hide-home-search-bar) | Hides the search bar on the Home screen. | • Hide home search bar |
-| [Hide home tab bar items](#hide-home-tab-bar-items) | Hide selected horizontal tab bar items on the home screen (Featured, Plaza, Subscriptions, Anime, Shorts, Community, Campaigns). | • Hide Featured tab<br>• Hide Plaza tab<br>• Hide Campaign and Activity tabs<br>• Hide Subscriptions tab<br>• Hide Anime tab<br>• Hide Shorts tab<br>• Hide Community (Opus) tab |
-| [Pure discover search bar](#pure-discover-search-bar) | Removes discover tabs and trending searches to make the Discover page a pure search bar. | • Hide discover tabs<br>• Hide trending searches |
+| [Remove ads](#remove-ads) | Hides selected feed, splash, floating, push, overlay and under-player advertisements. | • Hide question cards<br>• Hide feed ads<br>• Disable floating ads<br>• Disable inner push banner<br>• Disable splash ads<br>• Disable player overlay ads<br>• Disable under-player ads |
+| [Remove user content](#remove-user-content) | Filters known user videos and creator surfaces, keeps Anime search, and preserves unknown official content and download management. |  |
 
 </details>
 

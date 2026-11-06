@@ -1,3 +1,6 @@
+import java.util.zip.ZipFile
+import org.gradle.jvm.tasks.Jar
+
 group = "io.github.ikuradachi.kagebili"
 
 patches {
@@ -26,10 +29,22 @@ tasks {
     register<JavaExec>("generatePatchesList") {
         description = "Build patch with patch list"
 
-        dependsOn(build)
+        // jar recreates the MPP; buildAndroid must add DEX before catalog generation.
+        dependsOn(build, "buildAndroid")
 
         classpath = sourceSets["main"].runtimeClasspath + patchListGeneratorClasspath
         mainClass.set("util.PatchListGeneratorKt")
+        args(project.tasks.named<Jar>("jar").flatMap { it.archiveFile }.get().asFile.absolutePath)
+    }
+
+    named("buildAndroid") {
+        doLast {
+            ZipFile(project.tasks.named<Jar>("jar").get().archiveFile.get().asFile).use { bundle ->
+                check(bundle.getEntry("classes.dex") != null) {
+                    "Android patch bundle is missing classes.dex"
+                }
+            }
+        }
     }
 
     // Used by gradle-semantic-release-plugin.

@@ -94,15 +94,6 @@ object PlayerRecommendWidgetActivateFingerprint : Fingerprint(
 // Community Guideline Toast (separate from player outro unlock card)
 // ============================================================================
 
-object FavoriteGuidelineFingerprint : Fingerprint(
-    definingClass = "Lcom/biliintl/playdetail/page/list/community/guideline/FavoriteGuidelineService;",
-    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
-    returnType = "V",
-    parameters = listOf("Lcom/biliintl/play/model/view/ViewCommunityCardMeta\$FavToast;"),
-    filters = listOf(
-        newInstance("Lcom/biliintl/playdetail/page/list/community/guideline/FavoriteGuidelineComponent;"),
-    ),
-)
 
 // ============================================================================
 // Target 8: Chronos Engine Command Danmaku Popups (#OPUS_PUBLISH#, #RECOMMAND#, etc.)
@@ -121,15 +112,6 @@ object ChronosGetCommandInfoFingerprint : Fingerprint(
 )
 
 // Target 8B: Chronos ViewProgress gRPC Dispatcher
-object ChronosViewProgressGrpcFingerprint : Fingerprint(
-    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
-    returnType = "V",
-    parameters = listOf("Ljava/lang/String;", "[B", "L"),
-    filters = listOf(
-        string("bilibili.intl.app.interface.v1.App/ViewProgress"),
-        string("bstar_grpc_call_view_progress"),
-    ),
-)
 
 // Target 8C: Chronos CheckRecommendDanmaku RPC Gate
 object ChronosCheckRecommendDanmakuFingerprint : Fingerprint(
